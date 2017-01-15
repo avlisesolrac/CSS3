@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title> Sintaxe do CSS</title>
+	<style>
+		
+		/*
+		Sintaxe:
+		h1 {color: blue; font-size: 12px;}
+
+		h1 - seletor, pode ser qualquer tag html
+		color - propriedade que determina a cor de texto
+		blue - valor da propriedade color
+		font-size - propriedade que determina tamanho da fonte
+		12px - valor da propriedade font-size
+		color: blue; e font-size: 12px; - Cada declaração possui uma propriedade e um valor terminados por ';'
+		{} - bloco de declaração, podendo um seletor receber uma ou mais declarações
+		*/
+
+		p {
+			color: red;
+			text-align: center;
+		}
+		
+		#cor-preto-esquerda {
+			color: black;
+			text-align: left;
+		}
+
+	</style>
+</head>
+<body>
+
+<p>Texto alinhado ao centro e vermelho!</p>
+<p>Outro parágrado para ver que o estilo é aplicado a todos os &#60;p&#62; da página</p>
+<p id="cor-preto-esquerda">Neste texto será aplicado outras propriedades.</p>
+</body>
+</html>
