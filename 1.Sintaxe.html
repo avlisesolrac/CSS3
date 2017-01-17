@@ -28,12 +28,38 @@
 			text-align: left;
 		}
 
+		.centro-orange {
+			text-align:center;
+			color:orange;
+		}
+
+		p.direita{
+			text-align:right;
+		}
+
+		p.grande{
+			font-size:300%;
+		}
+
+		h1, h2, p {
+			border-bottom: 1px solid #d3d3d3;
+			
+		}
+
 	</style>
 </head>
 <body>
-
+<h1>Usando o atributo id:</h1>
 <p>Texto alinhado ao centro e vermelho!</p>
 <p>Outro parágrado para ver que o estilo é aplicado a todos os &#60;p&#62; da página</p>
 <p id="cor-preto-esquerda">Neste texto será aplicado outras propriedades.</p>
+
+<h1>Usando o atributo class:</h1>
+<h2 class="centro-orange">Título alinhado ao centro e laranja</h2>
+<p class="centro-orange">E o mesmo para o parágrafo</p>
+<p class="direita">Único parágrafo com uma class a direita</p>
+<p class="centro-orange grande">Parágrafo com duas classes no mesmo elemento html</p>
+
+
 </body>
 </html>
