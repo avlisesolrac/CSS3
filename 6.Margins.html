@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Margin</title>
+	<style>
+		/*Usando margin-top, margin-bottom, margin-right e margin-left:*/
+		div{border: 1px solid black; margin-top: 100px; margin-right: 150px; margin-bottom: 100px; margin-left: 80px; background-color: lightblue;}
+
+		/*Usando margin:*/
+		div.dois{border: 1px solid black; margin: 100px 150px 100px 80px; background-color: lightblue;}
+
+		/*Usando o valor auto para centralizar elemento*/
+		div.tres{border: 1px solid red; width: 300px; margin: auto;}
+		
+		/*Usando o valor inherit para herdar do elemento pai*/
+		div.container{border: 1px solid red; margin-left: 100px;}
+		p.one{margin-left: inherit;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedades margin-top, margin-right, margin-bottom e margin-left:</h1>
+
+<div>Este elemento DIV tem uma margin-top de 100px, margin-right de 150px, margin-bottom de 100px e margin-left de 80px</div>
+
+<div class="dois">Este elemento DIV tem uma margin: 100px 150px 100px 80px</div>
+
+<div class="tres">Este elemento DIV tem uma margin: auto para ficar sempre ao centro.</div>
+
+<div class="container">
+	<p class="one">Este parágrafo é filho do elemento pai DIV</p>
+</div>
+
+</body>
+</html>
