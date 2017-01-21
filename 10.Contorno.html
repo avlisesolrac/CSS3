@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Contorno - Outline</title>
+	<style>
+		/*Aplicando a propriedade outline-style:*/
+		p{border: 1px solid black; outline-color: green;}
+		p.dotted{outline-style: dotted;}
+		p.dashed{outline-style: dashed;}
+		p.solid{outline-style: solid;}
+		p.double{outline-style: double;}
+		p.groove{outline-style: groove;}
+		p.ridge{outline-style: ridge;}
+		p.inset{outline-style: inset;}
+		p.outset{outline-style: outset;}
+		p.largura{outline-style: solid; outline-width: thick;}
+		p.largura-dois{outline-style: solid; outline-width: 10px;}
+		p.outline{border: 1px solid black; outline: 5px dotted red;}
+		div{margin: 20px; width: 150px; padding: 10px; height: 70px; border: 2px solid black; outline: 2px solid red; outline-offset: 15px;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedade outline-style:</h1>
+
+<p class="dotted">Outline-style: dotted</p>
+<p class="dashed">Outline-style: dashed</p>
+<p class="solid">Outline-style: solid</p>
+<p class="double">Outline-style: double</p>
+<p class="groove">Outline-style: groove</p>
+<p class="ridge">Outline-style: ridge</p>
+<p class="inset">Outline-style: inset</p>
+<p class="outset">Outline-style: outset</p>
+
+<h1>Propriedade outline-width:</h1>
+
+<p class="largura">Outline-width: thick</p>
+<p class="largura-dois">Outline-width: 10px</p>
+
+<h1>Propriedade outline:</h1>
+<p class="outline">Usando somente a propriedade outline: 5px dotted red</p>
+
+<h1>Propriedade outline-offset:</h1>
+<div>Aplicando a propriedade outline-offset de 15px</div>
+
+</body>
+</html>
