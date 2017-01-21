@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Padding</title>
+	<style>
+		div{border: 1px solid #000; background-color: lightblue;}
+
+		/*Usando padding-top, padding-right, padding-bottom e padding-left para dar espaçamento interno no elemento <div>*/
+		div{padding-top: 50px; padding-right: 30px; padding-bottom: 50px; padding-left: 80px;}
+
+		/*Usando somente padding para dar espaçamento interno no elemento <div>*/
+		div.padding{padding: 50px 30px 50px 80px;}
+
+		/*Usando as variações de valores para o padding*/
+		/*Usando 4 valores serão respectivamente: top, right, bottom e left*/
+		div.ex4{paddgin:25px 50px 75px 100px;}
+
+		/*Usando 3 valores serão respectivamente: top, right && left e bottom*/
+		div.ex3{padding: 25px 50px 75px;}
+
+		/*Usando 2 valores serão respectivamente: top && bottom e right && left*/
+		div.ex2{padding: 25px 50px;}
+
+		/*Usando 1 valor será aplicado aos quatro lados*/
+		div.ex1{`padding: 25px;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedades padding-top, padding-right, paddin-bottom e padding-left:</h1>
+
+<div>Este elemento DIV está usando as propriedades padding top de 50px, padding right de 30px, padding bottom de 50px e padding left de 80px</div>
+
+<div class="padding">Este elemento DIV está usando as propriedades padding top de 50px, padding right de 30px, padding bottom de 50px e padding left de 80px</div>
+
+<div class="ex4">Este elemento DIV está usando 4 valores na propriedade padding.</div>
+
+<div class="ex3">Este elemento DIV está usando 3 valores na propriedade padding.</div>
+
+<div class="ex2">Este elemento DIV está usando 2 valores na propriedade padding.</div>
+
+<div class="ex1">Este elemento DIV está usando 1 valores na propriedade padding.</div>
+
+</body>
+</html>
