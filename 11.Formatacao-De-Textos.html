@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Formatação de Textos</title>
+	<style>
+		body{background-color: #fff; color: blue;}
+		h1{color: green;}
+		h2{text-align: center;}
+		h3{text-align: left;}
+		h4{text-align: right;}
+		div.justify{border: 1px solid black; padding: 10px; width: 200px; height: 200px; text-align: justify;}
+		p a{text-decoration: none;}
+		h2.overline{text-decoration: overline;}
+		h3.line-through{text-decoration: line-through;}
+		h4.underline{text-decoration: underline;}
+		p.uppercase{text-transform: uppercase;}
+		p.lowercase{text-transform: lowercase;}
+		p.capitalize{text-transform: capitalize;}
+		p.tab{text-indent: 50px;}
+		h2.ls-quatro{letter-spacing: 4px;}
+		h3.ls-menos-quatro{letter-spacing: -4px;}
+		p.small{line-height: 0.7;}
+		p.big{line-height: 1.8;}
+		div.direction{direction: rtl; unicode-bidi: bidi-override;}
+		h2.ws-dez{word-spacing: 10px;}
+		h3.ws-menos-cinco{word-spacing: -5px;}
+		h1.shadow{text-shadow: 3px 2px grey;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedade color: red:</h1>
+<p>Neste parágrafo e em toda a página está sendo usado a propriedade color: blue, exceto para o elemento H1.</p>
+<!--Padrão W3C - Se for aplicar a propriedade color, deve definir também a propriedade background-color-->
+
+<h1>Propriedade text-align:</h1>
+<h2>Text-align: center</h2>
+<h3>Text-align: left</h3>
+<h4>Text-align: right</h4>
+<div class="justify">
+	Text-align: justify <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+</div>
+
+<h1>Propriedade text-decoration:</h1>
+<span>Um link padrão: <a href="http://www.w3schools.com">W3Schools.com</a></span>
+<p>Um link sem underline: <a href="http://www.w3schools.com">W3Schools.com</a></p>
+<h2 class="overline">Text-decoration: overline</h2>
+<h3 class="line-through">Text-decoration: line-through</h3>
+<h4 class="underline">Text-decoration: underline</h4>
+
+<h1>Propriedade text-transform:</h1>
+<p class="uppercase">Text-transform: uppercase todo em caixa alta, mesmo que tenha digitado em caixa baixa</p>
+<p class="lowercase">TEXT-TRANSFORM: LOWERCASE TODO EM CAIXA BAIXA, MESMO QUE TENHA DIGITADO EM CAIXA ALTA</p>
+<p class="capitalize">text-Transform: capitalize toda letra inicial de uma palavra fica em caixa alta</p>
+
+<h1>Propriedade text-indent:</h1>
+<p class="tab">Este parágrafao está usando text-indent de 50px, isso quer dizer que na primeira linha do parágrafo é adicionado um recuo/tab de 50px. In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.' </p>
+
+<h1>Propriedade letter-spacing:</h1>
+<h2 class="ls-quatro">Letter-spacing de 4px</h2>
+<h3 class="ls-menos-quatro">Letter-spacing de -3px</h3>
+
+<h1>Propriedade word-spacing:</h1>
+<h2 class="ws-dez">Este subtítulo tem um word-spacing de 10px</h2>
+<h3 class="ws-menos-cinco">Este sub(subtítulo) tem um word-spacing de -5px</h3>
+
+<h1>Propriedade line-height:</h1>
+<p class="small">Este parágrafo está com line-height de 0.7. <br>Este parágrafo está com line-height de 0.7.</p>
+
+<p class="big">Este parágrafo está com line-height de 1.8. <br>Este parágrafo está com line-height de 1.8.</p>
+
+<h1>Propriedade direction:</h1>
+<div class="direction">Este texto está com direction right-to-left(rtl).</div>
+
+<h1 class="shadow">Propriedade text-shadow: 3px 2px grey</h1>
+
+</body>
+</html>
