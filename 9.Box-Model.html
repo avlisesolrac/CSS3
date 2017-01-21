@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Box Model</title>
+	<style>
+		/*Como aplicar um box model:*/
+		div{background-color: lightgrey; width: 300px; border: 25px solid green; padding: 25px; margin: 25px;}
+
+		div.dois{width:320px; padding: 10px; border: 5px solid gray; margin: 0;}
+	</style>
+</head>
+<body>
+
+<h1>Demonstração de um Box Model:</h1>
+
+<div>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iste dolorum recusandae iure modi commodi quam quisquam, quibusdam minima voluptates maiores explicabo consectetur enim praesentium temporibus officia alias reprehenderit, vel!</div>
+
+<h1>Imagem com box embaixo:</h1>
+
+<img src="./imagens/klematis4_big.jpg" alt="Klematis">
+<div class="dois">A foto acima tem 350px de largura e este elemento DIV também tem uma largura total de 350px, contando com o padding e border</div>
+
+<!--Calcular a largura total do elemento:
+Largura total = (largura + padding-left + padding-right + border-left + border-right + margin-left + margin-right)
+
+Calcular a altura total do elemento:
+Altura total = (altura + padding-top + padding-bottom + border-top + border-bottom + margin-top + margin-bottom)
+-->
+</body>
+</html>
