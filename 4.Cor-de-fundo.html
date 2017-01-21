@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cores de fundo</title>
+	<style>
+		/*body{background-color:lightblue;}*/
+		body{
+		/*background-image: usado para definir uma imagem de fundo*/
+			background-image: url(./imagens/paper.gif);
+		/*background-repeat - propriedade que especifica em qual direção a imagem será repetida, no eixo x(horizontal) ou y(vertical)*/
+			background-repeat: repeat-y;
+		/*no-repeat - não repete a image, ela só aparace uma vez*/
+			background-repeat: no-repeat;
+		/*background-position: posiciona a imagem em alguma direção da tela*/
+			background-position: right top;
+		/*background-attachment - usado para especificar se a imagem ficará fixa na tela, pode usar outro valor além de fixed, como scroll*/
+			background-attachment: fixed;
+		/*
+			Na seguinte ordem:
+				background-color
+				background-image
+				background-repeat
+				background-attachment
+				background-position
+				
+		Pode usar as propriedades acima de uma unica vez:
+			background: #ffffff url(./imagens/paper.gif) no-repeat right top;
+		*/
+		}
+		
+		h1{background-color: green;}
+		div{background-color: cyan;}
+		p{background-color: yellow;}
+	</style>
+</head>
+<body>
+
+<h1>Cor de fundo verde para H1</h1>
+<div>
+	Este texto está dentro do elemento DIV
+	<p>Já este está dentro do elemento P</p>
+	Mas este aqui está dentro do elemento DIV.
+</div>
+
+<h1>Hello World!</h1>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>If you do not see any scrollbars, try to resize the browser window.</p>
+
+</body>
+</html>
