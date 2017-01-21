@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Estilo de Bordas</title>
+	<style>
+		/*Usando border-style:*/
+		p.dotted{border-style: dotted;}
+		p.dashed{border-style: dashed;}
+		p.solid{border-style: solid;}
+		p.double{border-style: double;}
+		p.groove{border-style: groove;}
+		p.ridge{border-style: ridge;}
+		p.inset{border-style: inset;}
+		p.outset{border-style: outset;}
+		p.none{border-style: none;}
+		p.hidden{border-style: hidden;}
+		p.varias-bordas{border-style: dotted dashed solid double;}
+		
+		/*Usando border-width:*/
+		p.um{border-style: solid; border-width: 5px;}
+		p.dois{border-style: solid; border-width: medium;}
+		p.tres{border-style: dotted; border-width: 2px;}
+		p.quatro{border-style: dotted; border-width: thick;}
+		p.cinco{border-style: double; border-width: 15px;}
+		p.seis{border-style: double; border-width: thick;}
+		p.sete{border-style: solid; border-width: 2px 20px 4px 20px;}
+		
+		/*Usando border-color:*/
+		p.red{border-style: solid; border-color: red;}
+		p.green{border-style: solid; border-color: green;}
+		p.tres-cores{border-style: solid; border-color: red green blue yellow;}
+
+		/*Usando border-top-style, border-right-style, border-bottom-style, border-left-style:*/
+		p.duas-bordas{border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;}
+		p.duas-bordas-diferente{border-style: dotted solid;}
+
+		/*Usando border:*/
+		p.border-red{border: 5px solid red;}
+
+		/*Usando border-left, border-bottom, border-right e border-top:*/
+		p.border-left{border-left: 6px solid red; background-color: lightgrey;}
+		p.border-bottom{border-bottom: 6px solid red; background-color: lightgrey;}
+		p.border-right{border-right: 6px solid red; background-color: lightgrey;}
+		p.border-top{border-top: 6px solid red; background-color: lightgrey;}
+
+		/*Usando border-radius: PS.: Não suportado no IE8 e anteriores*/
+		p.round1{border: 2px solid red; border-radius: 5px;}
+		p.round2{border: 2px solid red; border-radius: 8px;}
+		p.round3{border: 2px solid red; border-radius: 11px;}
+
+	</style>
+</head>
+<body>
+
+<h1>Propriedade border-style:</h1>
+
+<p class="dotted">Estilo da borda: dotted</p>
+<p class="dashed">Estilo da borda: dashed</p>
+<p class="solid">Estilo da borda: solid</p>
+<p class="double">Estilo da borda: double</p>
+<p class="groove">Estilo da borda: groove</p>
+<p class="ridge">Estilo da borda: ridge</p>
+<p class="inset">Estilo da borda: inset</p>
+<p class="outset">Estilo da borda: outset</p>
+<p class="none">Estilo da borda none</p>
+<p class="hidden">Estilo da borda hidden</p>
+<p class="varias-bordas">Etilo da borda misturado</p>
+
+<h1>Propriedade border-width:</h1>
+
+<p class="um">Borda: solid e Largura: 5px</p>
+<p class="dois">Borda: solid e Largura: medium</p>
+<p class="tres">Borda: dotted e Largura: 2px</p>
+<p class="quatro">Borda: dotted e Largura: thick</p>
+<p class="cinco">Borda: double e Largura: 15px</p>
+<p class="seis">Borda: double e Largura: thick</p>
+<p class="sete">Borda: solid e Largura: 2px 10px 4px 20px [top, direita, baixo e esquerda]</p>
+
+<h1>Propriedade border-color:</h1>
+
+<p class="red">Borda: solid e Cor: red</p>
+<p class="green">Borda: solid e Cor: green</p>
+<p class="tres-cores">Borda: solid e Cor: red green blue yellow</p>
+
+<h1>Propriedades border-top-style, border-right-style, border-bottom-style e border-left-style:</h1>
+
+<p class="duas-bordas">Dois estilos de bordas, sendo dotted para top e bottom e solid para right e left</p>
+
+<p class="duas-bordas-diferente">O mesmo estilo da borda de cima, mas usando somente border-style: dotted solid, determinando os estilos para top,bottom e right, left.</p>
+
+<h1>Usando somente a propriedade border:</h1>
+
+<p class="border-red">Borda: 5px solid red</p>
+
+<h1>Usando somente a propriedade border-left, border-bottom, border-right e border-top:</h1>
+
+<p class="border-left">Borda Esquerda: 6px solid red e Cor de Fundo: lightgrey.</p>
+
+<p class="border-bottom">Borda Baixo: 6px solid red e Cor de Fundo: lightgrey.</p>
+
+<p class="border-right">Borda Direita: 6px solid red e Cor de Fundo: lightgrey</p>
+
+<p class="border-top">Borda Top: 6px solid red e Cor de Fundo: lightgrey</p>
+
+<h1>Usando a propriedade border-radius:</h1>
+
+<p class="round1">Radius: 5px</p>
+<p class="round2">Radius: 8px</p>
+<p class="round3">Radius: 11px o máximo</p>
+
+</body>
+</html>
