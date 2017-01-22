@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Overflow usado para conter ou não conteúdo de elemento</title>
+	<style>
+		div.visible{background-color: #eee; width: 200px; height: 50px; border: 1px dotted black; overflow: visible;}
+		div.hidden{background-color: #eee; width: 200px; height: 50px; border: 1px dashed black; overflow: hidden;}
+		div.scroll{background-color: #eee; width: 200px; height: 50px; border: 1px dotted black; overflow: scroll;}
+		div.auto{background-color: #eee; width: 200px; height: 80px; border: 1px dashed black; overflow: auto;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedade overflow: visible</h1>
+
+<div class="visible">Esta DIV está com a propriedade overflow: visible que é padrão nos elementos de box, e se o conteúdo estourar as dimensões da DIV então o resto do conteúdo será exibido para fora.</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<h1>Propriedade overflow: hidden</h1>
+
+<div class="hidden">Esta DIV está com a propriedade overflow: hidden e no caso de estourar o conteúdo além das dimensões do box, então o conteúdo ficará escondido e não será exibido impossibilitando do usuário visualizar o restante do conteúdo.</div>
+
+<h1>Propriedade overflow: scroll</h1>
+
+<div class="scroll">Esta DIV está com a propriedade overflow: scroll é adicionado barra de rolagem de acordo com o conteúdo dentro do bloco</div>
+
+<h1>Propriedade overflow: auto</h1>
+
+<div class="auto">Esta DIV está com a propriedade overflow: auto, isso quer dizer que se o conteudo da DIV for maior que o seu próprio tamanho é adicionado automaticamente a barra de rolagem, caso contrário, ou seja, o conteúdo for menor que a dimensão do box, então a barra de rolagem ficará escondida.</div>
+<!--Pode usar overflow-y: scroll/hidden/auto para a barra de rolagem no eixo vertical.
+Ou pode usar overflow-x: scroll/hidden/auto para a barra de rolagem no eixo horizontal.
+-->
+
+</body>
+</html>
