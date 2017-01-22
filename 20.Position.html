@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Posição de Elementos</title>
+	<style>
+		.static{position: static; border: 3px solid #73ad21;}
+		.relative{position: relative; left: 50px; border: 3px solid #73ad21;}
+		.fixed{position: fixed; border: 3px solid #73ad21; bottom: 0; right: 0; width: 300px;}
+		.absolute{position: absolute; border: 3px solid #73ad21; top: 80px; right: 0; width: 200px; height: 100px;}
+		.relative-dois{position: relative; width: 400px; height: 200px; border: 3px solid #73ad21;}
+		img{position: absolute; left: 20px; top: 370px; z-index: -1;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedade Position: static(valor padrão)</h1>
+
+<div class="static">Este elemento está com position: static</div>
+<!--Elemento com position: static é padrão para os elementos html e o posicionamento é de acordo com o fluxo normal da página, não sendo aplicável as propriedades top, bottom, left ou right -->
+
+<div class="relative">Este elemento está com position: relative</div>
+<!--Elemento com position: relative é posicionado de acordo com a posição atual do elemento -->
+
+<div class="fixed">Este elemento está com position: fixed</div>
+<!--Elemento com position: fixed tem posicionamento fixo na tela, se rola a página o elemento ficará fixo na tela -->
+
+<div class="relative-dois">
+	<div class="absolute">Este elemento está com position: absolute</div>
+</div>
+<!--Elemento com position: absolute é posicionado de acordo com o elemento pai, caso não esteja dentro de nenhum outro elemento, será posicionado de acordo com o corpo do documento, pode usar para fixar o rodapé na parte inferior do navegador -->
+
+<h1>Este capítulo e </h1>
+<img src="./imagens/w3schools_logo.gif" alt="Logo Azul da W3Schools">
+<p>Este parágrafo estão acima da imagem, porque a imagem está com z-index: -1</p>
+
+</body>
+</html>
