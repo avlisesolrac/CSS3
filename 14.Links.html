@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Links</title>
+	<style>
+		a{color: orange;}
+
+		/*Link não visitado:*/
+		a.cores:link{color: red;}
+		
+		/*Link visitado:*/
+		a.cores:visited{color: green;}
+
+		/*Mouse em cima do link:*/
+		a.cores:hover{color: hotpink;}
+
+		/*Link clicado:*/
+		a.cores:active{color: blue;}
+
+		/*Usando text-decoration:*/
+		a.decoration:link{text-decoration: none;}
+		a.decoration:visited{text-decoration: none;}
+		a.decoration:hover{text-decoration: underline;}
+		a.decoration:active{text-decoration: underline;}
+
+		/*Usando background-color:*/
+		a.background:link{background-color: yellow;}
+		a.background:visited{background-color: cyan;}
+		a.background:hover{background-color: lightblue;}
+		a.background:active{background-color: hotpink;}
+
+		/*Link como botão(advanced):*/
+		a.advanced:link, a.advanced:visited{
+			background-color: #f44336;
+			color: white;
+			padding: 14px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		a.advanced:hover, a.advanced:active{background-color: #ff4336;}
+
+		/*Link como botão(border):*/
+		a.border:link, a.border:visited{
+			background-color: white;
+			color: black;
+			border: 2px solid green;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		a.border:hover, a.border:active{
+			background-color: green;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+
+<h1>Modificando links:</h1>
+<!--
+ESTADOS DE UM LINK e se for aplicar estilo para cada estado, tem que ser na seguinte sequência:
+
+a:link - Quando o link ainda não foi visitado
+a:visited - Quando o link foi clicado
+a:hover - Quando passa o mouse em cima do link
+a:active - Quando clica no link
+-->
+
+<p><b><a href="#">Link 1</a></b></p>
+
+<p><b><a href="#2" class="cores">Link 2</a></b></p>
+
+<p><b><a href="#3" class="decoration">Link 3</a></b></p>
+
+<p><b><a href="#4" class="background">Link 4</a></b></p>
+
+<p><b><a href="#5" class="advanced">Link 5</a></b></p>
+
+<p><b><a href="#6" class="border">Link 6</a></b></p>
+
+</body>
+</html>
