@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabelas</title>
+	<style>
+		table.border, th, td{border: 1px solid black;}
+		table.border-collapse{border-collapse: collapse;}
+		table.altura-largura{border-collapse: collapse; width: 100%;}
+		table.altura-largura th{height: 50px;}
+		table.left th{text-align: left;}
+		table.vertical td{height: 50px; vertical-align: bottom;}
+		table.padding th, table.padding td{border: 1px solid #ddd; padding: 15px; text-align: left;}
+		table.padding{border-collapse: collapse; width: 100%;}
+		table.border-bottom th, table.border-bottom td{border: none; border-bottom: 1px solid #ddd; border-collapse:collapse; padding: 8px; text-align: left;}
+		table.cor-fundo tr:hover{background-color: #f5f5f5;}
+		table.listrada{border: none; border-collapse: collapse; width: 100%;}
+		table.listrada th, table.listrada td{border: none; text-align: left; padding: 8px;}
+		table.listrada tr:nth-child(odd){background-color: #f2f2f2;}
+		table.listrada th{background-color: #4caf50; color: white;}
+	</style>
+</head>
+<body>
+
+<h1>Tabelas com bordas:</h1>
+
+<h4>Border: 1px solid black</h4>
+<table class="border">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome:</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+
+<h4>Border-collapse: collapse</h4>
+
+<table class="border-collapse">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+
+<h4>Alterando altura e largura da tabela com height:50px e width: 100%:</h4>
+
+<table class="altura-largura">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+/
+<h4>Propriedade text-align: left:</h4>
+
+<table class="altura-largura left">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+
+<h4>Propriedade vertical-align: bottom:</h4>
+
+<table class="altura-largura vertical">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+
+<h4>Propriedade padding: 15px:</h4>
+
+<table class="padding">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+
+<h4>Propriedade border-bottom: 1px solid #ddd:</h4>
+
+<table class="border-bottom">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+
+<h4>Propriedade tr:hover{background-color: #f5f5f5}:</h4>
+
+<table class="border-bottom cor-fundo">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+
+<h4>Propriedade tr:nth-child(even/odd){background-color: #f2f2f2}:</h4>
+
+<table class="listrada">
+	<tr>
+		<th>Primeiro nome:</th>
+		<th>Ultimo nome</th>
+	</tr>
+
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
+</table>
+
+</body>
+</html>
