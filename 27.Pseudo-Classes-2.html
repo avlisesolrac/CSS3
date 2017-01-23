@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-Classes 2</title>
+	<style>
+		input:checked{height: 50px; width: 50px;}
+
+		input:[type=text]:enabled{background-color: #ff00ff;}
+		input:[type=text]:disabled{background-color: #d3d3d3;}
+		
+		p:empty{width: 100px; height: 20px; background-color: #ff0000;}
+		
+		input:invalid{border-color: red;}
+
+		:target{border: 2px solid #d4d4d4; background-color: #e5eecc;};
+		/*p:first-of-type{} usado para estilizar o primeiro elemento do tipo que está antes dos ':', neste caso <p>
+
+		p:last-of-type{} usado para estilizar o ultimo elemento do tipo que está antes dos ':', neste caso <p>*/
+
+		/*p:last-child{} usado para estilizar o ultimo filho que seja <p>*/
+		
+		/*:not(p){} usado para estilizar tudo o que não seja <p> -- BOM PRA COLOCAR BORDA EM TODOS OS ELEMENTOS PARA VISUALIZAR MELHOR O LAYOUT*/
+
+		/*p:nth-child(2){} usado para estilizar para cada elemento <p> que seja o segundo filho de seu pai*/
+		
+		/*p:nth-last-child(2){} usado para estilizar para cada elemento <p> que seja o segundo filho de seu pai, contando a partir do ultimo filho*/
+
+		/*p:nth-last-type(2){} usado para estilizar para cada elemento <p> que seja o segundo elemento p de seu pai, contando a partir do ultimo filho.*/
+
+		/*p:only-of-type{} usado para estilizar o elemento do tipo p que é o unico filho do seu tipo, de seu pai*/
+
+		/*p:only-child{} usado para estilizar cada elemento p que seja o único filho de seu pai, se tiver mais do que um filho, mesmo que não seja p, não será aplicado o estilo css*/
+
+		/*input:optional{} usado para estilizar o campo de entrada que não tenha o atributo required*/
+
+		/*input:read-only{} usado para estilizar campo de entrada que seja somente de leitura*/
+
+	</style>
+</head>
+<body>
+
+<h1>Pseudo-classe input:checked</h1>
+
+<form action="">
+	<fieldset>
+		<legend>:checked</legend>
+		<input class="ch" type="radio" name="sexo" value="M" checked/>Masculino<br/>
+		<input class="ch" type="radio" name="sexo" value="F"/>Feminino<br/>
+		<input class="ch" type="checkbox" value="bike" checked/>Bicicleta<br/>
+		<input class="ch" type="checkbox" value="car"/>Carro<br/>
+	</fieldset>
+</form>
+
+<h1>Pseudo-classe input[type=text]:enabled e input[type=text]:disabled</h1>
+
+<form action="">
+	<fieldset>
+		<legend>:enabled e :disabled</legend>
+		Primeiro Nome:
+		<input class="habilitado" type="text" name="nome" value="Mickey"/><br/>
+		Ultimo Nome:
+		<input class="desabilitado" type="text" name="sobrenome" value="Mouse" disabled/><br/>
+	</fieldset>
+</form>
+
+<h1>Pseudo-classe p:empty</h1>
+<p>Parágrafo normal, mas na linha seguinte o parágrafo ficará vazio(empty) e será aplicado um estilo no caso de &#60;p&#62; esteja vazio.</p>
+<p></p>
+
+<h1>Pseudo-classe input:invalid</h1>
+Digite seu e-mail: <br>
+<input type="email" name="email" size="20"/>
+
+<h1>Usando a pseudo-classe :target</h1>
+<p><a href="#link1">LINK 1</a></p>
+<p><a href="#link2">LINK 2</a></p>
+
+<p id="link1">Novo Conteudo do Link1</p>
+<p id="link2">Novo Conteudo do Link1</p>
+
+</body>
+</html>

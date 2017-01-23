@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-Classes</title>
+	<style>
+		a:link{color: red;}
+		a:visited{color: green;}
+		a:hover{color: hotpink;}
+		a:active{color: blue;}
+
+		/*APLICANDO PSEUDO-CLASSE EM UM ELEMENTO HTML COM CLASSE CSS*/
+		a.alerta:hover{color: blue;}
+
+		/*PSEUDO-CLASSE :hover EM UMA DIV:*/
+		div{background-color: green; color: white; padding: 25px; text-align: center;}
+		div:hover{background-color: blue;}
+		
+		/*Exibindo um elemento com a pseudo-classe :hover*/
+		div.filho p{display:none; background-color: yellow; padding: 20px;}
+		div.filho{background-color: #fff; color: #000; border: 1px dashed yellow}
+		div.filho:hover p{display: block;}
+
+		/*Aplicado estilo a uma pseudo-classe :first-child*/
+		div.primeiro-filho{border: 1px solid yellow;}
+		div.primeiro-filho p:first-child{color: red;}
+		p:first-child i{color: blue;}
+
+		q:lang(asterisco) {
+			quotes: "*" "*";
+		}
+		
+		/*Aplicando estilo em campo de formulário com a pseudo-classe :focus quando o usuário clicar no campo*/
+		input.foco:focus{background-color: #73ad21; color: white; font-weight: bold;}
+		}
+	</style>
+</head>
+<body>
+
+<h1>Pseudo-classes de link</h1>
+
+<h4>a:link - Link não visitado</h4>
+<h4>a:visited - Link visitado</h4>
+<h4>a:hover - Mouse em cima do Link</h4>
+<h4>a:active - Link clicado</h4>
+
+<p><b><a href="#">PSEUDO-CLASSE DE LINK</a></b></p>
+
+<h1>Usando Pseudo-classe :hover com classe CSS:</h1>
+<p><b><a href="#1" class="alerta">LINK COM CLASSE</a></b></p>
+
+<h1>Usando Pseudo-classe :hover numa DIV</h1>
+
+<div>Passe o mouse aqui em cima</div>
+
+<h1>Exibido um elemento ao passar o mouse em cima com a pseudo-classe :hover</h1>
+
+<div class="filho">
+	Passe o mouse aqui em cima para ver meu filho p.
+	<p>Aqui estou eu, um parágrafo dentro desta DIV</p>
+</div>
+
+<h1>Usando a pseudo-classe first-child</h1>
+
+<div class="primeiro-filho">
+	<p>Primeiro filho, então será aplicado o css aqui</p>
+	<p>Segundo filho, mas não será aplicado nada aqui</p>
+</div>
+<br><br>
+<strong>
+	<p>Teste de que o primeiro paragrafo com <i>itálico</i> será aplicado o estilo css</p>
+</strong>
+
+<h1>Acrescentar algo em um conteúdo com a pseudo-classe q:lang([argumento])</h1>
+
+<p>Aqui vai um texto e tal e bem aqui<q lang="asterisco"> Uma citação com asterisco </q> e seque a sequência do texto.</p>
+
+<h1>Usando a pseudo-classe :focus para input</h1>
+
+<label>Digite seu Nome normal:
+	<input type="text" name="nome" size="30">
+</label>
+<br><br>
+<label>Digite seu Nome com :focus:
+	<input class="foco" type="text" name="nome" size="30">
+</label>
+</body>
+</html>
