@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Float vs Inline-Block</title>
+	<style>
+		div.box{float: left; width: 150px; height: 75px; margin: 10px; border: 3px dashed #73ad21;}
+		div.depois-float{clear: left; border: 3px solid #ff0000;}
+		div.box-dois{display: inline-block; width: 150px; height: 75px; margin: 10px; border: 3px dashed #73ad21;}
+		div{border: 3px solid #73ad21;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedade float que tem que usar clear depois</h1>
+
+<div class="box">Box1</div>
+<div class="box">Box2</div>
+<div class="box">Box3</div>
+<div class="box">Box4</div>
+<div class="box">Box5</div>
+<div class="box">Box6</div>
+<div class="box">Box7</div>
+<div class="box">Box8</div>
+
+<div class="depois-float">Elemento necessário para colocar a propriedade clear:left para alinhar o restante da página</div>
+
+<h1>Aplicando o mesmo efeito acima com display: inline-block e sem necessidade de aplicar um clear:left a um elemento depois do elemento flutuador.</h1>
+
+<div class="box-dois">Box 1</div>
+<div class="box-dois">Box 2</div>
+<div class="box-dois">Box 3</div>
+<div class="box-dois">Box 4</div>
+<div class="box-dois">Box 5</div>
+<div class="box-dois">Box 6</div>
+<div class="box-dois">Box 7</div>
+<div class="box-dois">Box 8</div>
+
+<div>DIV QUALQUER, MAS SEM NENHUMA PROPRIEDADE A MAIS DO QUE A BORDA</div>
+
+</body>
+</html>
