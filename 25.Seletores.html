@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Seletores</title>
+	<style>
+		/*SELETOR DESCENDENTE(' '):*/
+		div.descendente{border:1px solid yellow;}
+		div.descendente p{background-color: yellow;}
+
+		/*SELETOR FILHO(>):*/
+		div.filho{border: 1px solid green;}
+		div.filho > p{background-color: green;}
+
+		/*SELETOR IRMÃO ADJACENTE(+):*/
+		div.irmao-adjacente{border: 1px solid red;}
+		div.irmao-adjacente + p{background-color: red;}
+
+		/*SELETOR IRMÃOS(~)*/
+		div.irmaos{border: 1px solid gray;}
+		div.irmaos ~ p{background-color: gray;}
+	</style>
+</head>
+<body>
+
+<h1>Seletor Descendente div p:</h1>
+
+<div class="descendente">
+	<p>Parágrafo 1 dentro desta div</p>
+	<p>Parágrafo 2 dentro desta div</p>
+	<span><p>Parágrafo 3 dentro desta div e dentro de span, sendo també descendente.</p></span>
+</div>
+
+<p>Parágrafo 4, mas fora da div descendente</p>
+<p>Parágrafo 5, mas fora da div descendente</p>
+
+<h1>Seletor Filho div > p:</h1>
+
+<div class="filho">
+	<p>Parágrafo 1 dentro desta div</p>
+	<p>Parágrafo 2 dentro desta div</p>
+	<span>
+		<p>Parágrafo 3 dentro desta div, mas dentro de um span. Não é filho da div, mas é descendente dela</p>
+	</span>
+</div>
+
+<p>Parágrafo 4, mas fora da div descendente</p>
+<p>Parágrafo 5, mas fora da div descendente</p>
+
+<h1>Seletor Irmão Adjacente(Imediatamente próximo) div + p:</h1>
+
+<div class="irmao-adjacente">
+	<p>Parágrafo 1 dentro desta div, então é filho</p>
+	<p>Parágrafo 2 dentro desta div, então é filho</p>
+</div>
+
+<p>Parágrafo 3, fora da div então é irmão, mas com como irmão adjacente da div, então o estilo será aplicado somente aqui, os outros irmão não serão aplicados esta propriedade de cor de fundo.</p>
+<p>Parágrafo 4, fora da div então é irmão</p>
+<p>Parágrafo 5, fora da div então é irmão</p>
+
+<h1>Seletor Irmãos(Geral) div ~ p:</h1>
+<p>Parágrafo 1</p>
+<div class="irmaos">
+	<code>mysql_num_rows();</code>
+	<p>Parágrafo 2</p>
+</div>
+
+<p>Parágrafo 3 fora da div e o primeiro então é irmão e adjacente</p>
+<code>mysql_connect();</code>
+<p>Parágrafo 4 fora da div, não é adjacente, mas é irmão. Como foi usado o seletor para irmãos em geral, então todos os parágrafos irmãos da div acima será aplicado o mesmo estilo css</p>
+
+</body>
+</html>
