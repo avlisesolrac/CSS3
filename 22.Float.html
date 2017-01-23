@@ -32,5 +32,16 @@
 <div class="div3">DIV 3</div>
 <div class="div4">DIV 4 - Exibindo esta div com borda para mostrar como fica o elemento seguinte ao anterior que foi atribuido a propriedade float com a propriedade clear para ajustar o layout da página</div>
 
+<!--Se a situação for a seguinte: um elemento float que está dentro de outro, esse outro elemento tem que ter um overflow: auto e assim não terá problema de layout, porém se não tomar cuidade irá apresentar barras de rolagem, portanto utilize o seguinte padrão web para essa situação:
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+adicione essa classe com essas propriedades ao elemento que vai contêr o elemento flutuante.
+ -->
+
 </body>
 </html>
