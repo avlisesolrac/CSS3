@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Barra de Navegação I</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		/*Remoção dos marcadores de lista e excesso de margin e padding:*/
+		ul{list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: #f1f1f1; position: fixed; height: 100%; overflow: auto;}
+		
+		/*Barra de navegação vertical com espaçamento superior e lateral e tirado o sublinhado*/
+		ul li a{display: block; color: #000; padding: 8px 16px; text-decoration: none; border-bottom: 1px solid #ccc; text-align: center;}
+
+		/*Efeito ao passar o mouse em cima do link, trocando a cor de fundo e cor dos links*/
+		ul li a:hover{background-color: #555; color: #fff;}
+
+		/*Link da página que o usuário está, diferente dos outros links:*/
+		ul li a.ativo{background-color: #4caf50; color: #fff;}
+	</style>
+</head>
+<body>
+
+<ul>
+	<li><a class="ativo" href="#principal">Principal</a></li>
+	<li><a href="#noticias">Notícias</a></li>
+	<li><a href="#fale-conosco">Fale Conosco</a></li>
+	<li><a href="#sobre">Sobre</a></li>
+</ul>
+<p>assdfasdfasdfasdfasdfasdfasassdfs</p>
+</body>
+</html>
