@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Opacidade</title>
+	<style>
+		/*filter usado para o IE8 e mais antigo*/
+		img{opacity: 0.5; filter: alpha(opacity=50); width: 170px; border: 5px solid #d3d3d3;}
+		img:hover{opacity: 1.0; filter: alpha(opacity=100);}
+
+		div{background-color: #4caf50; padding: 10px;}
+		div.first{opacity: 0.1; filter: alpha(opacity=10);}
+		div.second{opacity: 0.3; filter: alpha(opacity=30);}
+		div.third{opacity: 0.6; filter: alpha(opacity=60);}
+
+		div.fourth{background-color: rgba(76,175,80,0.1);}
+		div.fifth{background-color: rgba(76,175,80,0.3);}
+		div.sixth{background-color: rgba(76,175,80,0.6);}
+		div.rgb{background-color: rgb(76,175,80);}
+
+		div.fundo{background: url(./imagens/klematis4_big.jpg) repeat-x; border: 2px solid #000;}
+		div.box-transparente{margin: 30px; opacity: 0.6; filter: alpha(opacity=60); background-color: #fff; border: 1px solid #000;}
+		div.box-transparente p{text-align: center; font-weight: bold;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedade opacity</h1>
+
+<p>Imagem com opacidade de 50%:</p>
+<img src="./imagens/img_forest.jpg" alt="Ponte na Floresta">
+
+<p>Imagem com efeito de opacidade no :hover</p>
+<img src="./imagens/img_forest.jpg" alt="Ponte na Floresta">
+<img src="./imagens/img_mountains.jpg" alt="Montanhas na Floresta">
+<img src="./imagens/img_fjords.jpg" alt="Rio na Floresta">
+
+<h1>Propriedade opacity nas DIVS</h1>
+
+<div class="first">
+	<p>Opacity 0.1</p>
+</div>
+
+<div class="second">
+	<p>Opacity 0.3</p>
+</div>
+
+<div class="third">
+	<p>Opacity 0.6</p>
+</div>
+
+<div>
+	<p>Opacity 1 (default)</p>
+</div>
+
+<h1>Propriedade rgba nas DIVS</h1>
+
+<div class="fourth">
+	<p>rgba 0.1</p>
+</div>
+
+<div class="fifth">
+	<p>rgba 0.3</p>
+</div>
+
+<div class="sixth">
+	<p>rgba 0.6</p>
+</div>
+
+<div class="rgb">
+	<p>rgb</p>
+</div>
+
+<h1>Imagem com um box em cima transparente:</h1>
+
+<div class="fundo">
+	<div class="box-transparente">
+		<p>Aqui vai o texto que pode ser uma legenda sobre a foto</p>
+	</div>
+</div>
+
+</body>
+</html>
