@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-Elementos</title>
+	<style>
+		p::first-line{color: #ff0000; font-variant: small-caps;}
+		p.letra::first-letter{font-size: xx-large;}
+		h1::before{content: url(./imagens/w3css.gif);}
+		h1::after{content: " Pode ser um texto";}
+		::selection{color: red; background-color: yellow;}
+		/*Para o Firefox
+		::-moz-selection {color: red; background-color: yellow;};
+		*/
+	</style>
+</head>
+<body>
+
+<h1>Pseudo-elemento ::first-line</h1>
+
+<p>Para toda primeira linha de um parágrafo
+será estilizado de uma forma em relação ao parágrafo inteiro.</p>
+
+<h1>Pseudo-elemento ::first-letter</h1>
+
+<p class="letra">Para toda primeira letra de um parágrafo será estilizado de uma forma em relação ao parágrafo inteiro.</p>
+
+</body>
+</html>
