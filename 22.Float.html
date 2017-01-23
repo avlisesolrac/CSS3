@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Float - Flutuador de elementos</title>
+	<style>
+		img{float: right;}
+
+		/*SEM CLEAR*/
+		div.div1{float:left; width: 100px; height: 50px; margin: 10px; border: 5px solid #73ad21;}
+		div.div2{border: 1px solid red;}
+		/*SEM CLEAR*/
+		div.div3{float: left; width: 100px; height: 50px; margin: 10px; border: 3px solid #73ad21;}
+		div.div4{border: 1px solid red; clear: left;}
+	</style>
+</head>
+<body>
+
+<h1>Propriedade float: right</h1>
+
+<p><img src="./imagens/w3css.gif" alt="Logo do W3css"/>Exemplo de uma imagem com float: right, e visualizar como a imagem flutua para frente do conteúdo da página, deixando a imagem que por padrão ficaria à esquerda, passando para a direita.</p>
+
+<h1>Demonstração sem clear:</h1>
+
+<div class="div1">DIV 1</div>
+<div class="div2">DIV 2 - Exibindo esta div com borda para mostrar como fica o elemento seguinte ao anterior que foi atribuido a propriedade float sem a propriedade clear para ajustar o layout da página</div>
+
+<br>
+
+<h1>Demonstração com clear:</h1>
+
+<div class="div3">DIV 3</div>
+<div class="div4">DIV 4 - Exibindo esta div com borda para mostrar como fica o elemento seguinte ao anterior que foi atribuido a propriedade float com a propriedade clear para ajustar o layout da página</div>
+
+</body>
+</html>
