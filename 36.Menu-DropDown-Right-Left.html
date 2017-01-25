@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu Dropdown I</title>
+	<style>
+		/*Botão:*/
+		button.expansivel{background-color: #4caf50; color: #fff; padding: 16px; font-size: 16px; border: none; cursor: pointer;}
+
+		/*DIV que contem o menu dropdown*/
+		div.menu-expande{position: relative; display: inline-block;}
+
+		/*Menu dropdown*/
+		div.expandido{display: none; position: absolute; right: 0; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+
+		/*Links do menu*/
+		div.expandido a{color: black; padding: 12px 16px; text-decoration: none; display: block;}
+
+		/*Cor de fundo dos links do menu ao passar o mouse em cima:*/
+		div.expandido a:hover{background-color: #f1f1f1;}
+
+		/*Exibir div.expandido ao passar o mouse em cima do button*/
+		div.menu-expande:hover div.expandido{display: block;}
+
+		/*Alterar a cor de fundo do button ao passar o mouse em cima dele:*/
+		div.menu-expande:hover button.expansivel{background-color: #3e8e41;}
+	</style>
+</head>
+<body>
+
+<h1>Menu dropdown</h1>
+
+<div class="menu-expande" style="float: left;">
+	<button class="expansivel">Left</button>
+	<div class="expandido">
+		<a href="#">Link 1</a>
+		<a href="#2">Link 2</a>
+		<a href="#3">Link 3</a>
+	</div>
+</div>
+
+<div class="menu-expande" style="float: right;">
+	<button class="expansivel">Right</button>
+	<div class="expandido">
+		<a href="#">Link 1</a>
+		<a href="#2">Link 2</a>
+		<a href="#3">Link 3</a>
+	</div>
+</div>
+
+</body>
+</html>
