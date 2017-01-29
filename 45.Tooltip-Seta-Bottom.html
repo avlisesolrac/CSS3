@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltip com Seta no Bottom</title>
+  <style>
+    div.tooltip{position: relative; display: inline-block; border-bottom: 1px dotted #000;}
+    div.tooltip span.tooltip-text{visibility: hidden; width: 190px; background-color: #000; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0;
+      /*Posição do tooltip no Topo:*/
+      position: absolute; z-index: 1; bottom: 150%; left: 50%; margin-left: -95px;}
+    div.tooltip span.tooltip-text::after{content:""; position: absolute; top:100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #000 transparent transparent transparent; color: #000;}
+    div.tooltip:hover span.tooltip-text{visibility: visible;}
+  </style>
+</head>
+<body style="text-align: center;">
+<h1>Tooltip no topo com seta no bottom:</h1>
+  <div class="tooltip">
+    Passe o mouse aqui
+    <span class="tooltip-text">Tooltip com seta no bottom!</span>
+  </div>
+</body>
+</html>
