@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Tooltip à Direita</title>
+<style>
+  div.tooltip{position: relative; display: inline-block; border-bottom: 1px dashed black;}
+  div.tooltip span.tooltip-texto{visibility: hidden; width: 180px; background-color: #000000; color: #FFFFFF; text-align: center; border-radius: 6px; padding: 5px 0;
+    /*Posição do tooltip à direita:*/
+    position: absolute; z-index: 1; top: -5px; left: 130px;}
+  div.tooltip:hover span.tooltip-texto{visibility: visible;}
+</style>
+</head>
+<body style="text-align:center;">
+
+<h1>Tooltip do lado direito:</h1>
+
+<div class="tooltip">
+  Passe o mouse aqui
+  <span class="tooltip-texto">Aqui vai o tooltip a direita</span>
+</div>
+
+</body>
+</html>
