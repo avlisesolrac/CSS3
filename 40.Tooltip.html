@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tooltip</title>
+<style>
+  div.tooltip{position: relative; display: inline-block; border-bottom: 1px dotted black;}
+  div.tooltip span.tooltip-text{visibility: hidden; width: 120px; background-color: #000; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0;
+    /*Posição do tooltip:*/
+    position: absolute; z-index: 1;}
+  div.tooltip:hover span.tooltip-text{visibility: visible;}
+</style>
+</head>
+<body style="text-align:center;">
+
+<h1>Tooltip:</h1>
+
+<div class="tooltip">
+  Passe a seta do mouse aqui em cima.
+  <span class="tooltip-text">Texto auxiliar</span>
+</div>
+
+</body>
+</html>
