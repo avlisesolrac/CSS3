@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltip com Seta no Left</title>
+  <style>
+    div.tooltip{position: relative; display: inline-block; border-bottom: 1px dotted #000;}
+  div.tooltip span.tooltip-text{visibility: hidden; width: 180px; text-align: center; background-color: #000; color: #fff; border-radius: 6px; padding: 5px 0; /*Posição do tooltip à esquerda:*/
+    position: absolute; z-index: 1; left: 110%; top: -5px;}
+  div.tooltip span.tooltip-text::after{position: absolute; content:""; top: 50%; right: 100%; margin-top: -5px; border-width: 5px; border-style: solid; border-color: transparent #000 transparent transparent;}
+  div.tooltip:hover span.tooltip-text{visibility: visible;}
+  </style>
+</head>
+<body style="text-align: center;">
+<h1>Tooltip no Right com seta no Left:</h1>
+
+<div class="tooltip">
+  Passe o mouse aqui
+  <span class="tooltip-text">Tooltip com seta no Left</span>
+</div>
+
+</body>
+</html>
