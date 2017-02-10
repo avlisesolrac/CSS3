@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltip com Efeito de Transição</title>
+  <style>
+    div.tooltip{right: 0; position: relative; display: inline-block; border-bottom: 1px dotted #000;}
+    div.tooltip span.tooltip-text{visibility: hidden; width: 120px; background-color: #000; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; bottom: 100%; left: 50%; margin-left: -60px;
+      /*Efeito de transição para ir de 0% á 100% em 1 segundo*/
+      opacity: 0;
+      transition: opacity 1s;
+    }
+    div.tooltip:hover span.tooltip-text{visibility: visible; opacity: 1;}
+  </style>
+</head>
+<body style="text-align: center;">
+
+<h2>Tooltip com efeito de transição:</h2>
+
+<div class="tooltip">Passe o mouse aqui
+  <span class="tooltip-text">Texto do tooltip</span>
+</div>
+
+</body>
+</html>
