@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de imagens - Responsive</title>
+  <style>
+    div.img{border: 1px solid #ccc;}
+    div.img:hover{border: 1px solid #777;}
+    div.img img{width: 100%; height: auto;}
+    div.descricao{padding: 15px; text-align: center;}
+    *{box-sizing: border-box;}
+    div.img-responsive{padding: 0 6px; float: left; width: 25%;}
+
+    @media only screen and (max-width: 700px) {
+      div.img-responsive{width: 50%; margin: 6px 0;}
+    }
+
+    @media only screen and (max-width: 500px) {
+      div.img-responsive{width: 100%;}
+    }
+
+  </style>
+</head>
+<body>
+<div class="img-responsive">
+  <div class="img">
+    <a href="./imagens/img_fjords.jpg" target="_blank">
+      <img src="./imagens/img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="descricao">Adicione uma descrição da imagem aqui.</div>
+  </div>
+</div>
+
+<div class="img-responsive">
+  <div class="img">
+    <a href="./imagens/img_forest.jpg" target="_blank">
+      <img src="./imagens/img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="descricao">Adicione uma descrição da imagem aqui.</div>
+  </div>
+</div>
+
+<div class="img-responsive">
+  <div class="img">
+    <a href="./imagens/img_lights.jpg" target="_blank">
+      <img src="./imagens/img_lights.jpg" alt="Northern lights" width="600" height="400">
+    </a>
+    <div class="descricao">Adicione uma descrição da imagem aqui.</div>
+  </div>
+</div>
+
+<div class="img-responsive">
+  <div class="img">
+    <a href="./imagens/img_mountains.jpg" target="_blank">
+      <img src="./imagens/img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="descricao">Adicione uma descrição da imagem aqui.</div>
+  </div>
+</div>
+
+</body>
+</html>
