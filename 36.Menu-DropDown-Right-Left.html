@@ -11,7 +11,11 @@
 		div.menu-expande{position: relative; display: inline-block;}
 
 		/*Menu dropdown*/
-		div.expandido{display: none; position: absolute; right: 0; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+		div.expandido{display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+
+		/*Posicionamento dos itens do menu Left e Right*/
+		.left{left: 0;}
+		.right{right: 0;}
 
 		/*Links do menu*/
 		div.expandido a{color: black; padding: 12px 16px; text-decoration: none; display: block;}
@@ -32,7 +36,7 @@
 
 <div class="menu-expande" style="float: left;">
 	<button class="expansivel">Left</button>
-	<div class="expandido">
+	<div class="expandido left">
 		<a href="#">Link 1</a>
 		<a href="#2">Link 2</a>
 		<a href="#3">Link 3</a>
@@ -41,7 +45,7 @@
 
 <div class="menu-expande" style="float: right;">
 	<button class="expansivel">Right</button>
-	<div class="expandido">
+	<div class="expandido right">
 		<a href="#">Link 1</a>
 		<a href="#2">Link 2</a>
 		<a href="#3">Link 3</a>
