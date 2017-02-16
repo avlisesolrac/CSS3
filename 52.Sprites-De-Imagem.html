@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sprites de Imagem Para Economizar Request ao Servidor</title>
+  <style>
+    /*background: ulr() x y- ONDE x > 0 move para a esquerda e x < 0 move para a direita. E y > 0 move para baixo e y < 0 move para cima*/
+    img#home{width: 46px; height: 44px; background: url(./imagens/img_navsprites.gif) 0 0;}
+    img#next{width: 43px; height: 44px; background: url(./imagens/img_navsprites.gif) -91px 0;}
+  </style>
+</head>
+<body>
+  <img src="./imagens/img_navsprites.gif" alt="Imagem Com todos os Ìcones">
+  <br><br>
+  <img id="home" src="./imagens/img_trans.gif" alt="Tirar a borda da imagem de fundo">
+  <br><br>
+  <img id="next" src="./imagens/img_trans.gif" alt="Tirar a borda da Imagem de fundo">
+</body>
+</html>
